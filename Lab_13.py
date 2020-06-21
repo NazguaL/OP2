@@ -12,10 +12,15 @@ def on_move(event):
 
 master = Tk()
 master.geometry("%dx%d+0+0" % (500,500))
-msg = Label(master, text = "Move Me")
+
+msg = Label(master, text = "MoveMe")
 msg.config(bg='lightgreen', font=('times', 24, 'italic'))
 msg.bind('<B1-Motion>',on_move)
 msg.place(x=0,y=0)
 
+msg1 = Label(master, text = "MoveMe2")
+msg1.config(bg='lightgreen', font=('times', 24, 'italic'))
+msg1.bind('<B1-Motion>',on_move)
+msg1.place(x=30,y=70)
 
 mainloop()
